@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A04E7212019BF980045C7B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7202019BF980045C7B4 /* AppDelegate.m */; };
+		0A04E7242019BF980045C7B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7232019BF980045C7B4 /* ViewController.m */; };
+		0A04E7272019BF980045C7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A04E7252019BF980045C7B4 /* Main.storyboard */; };
+		0A04E7292019BF980045C7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A04E7282019BF980045C7B4 /* Assets.xcassets */; };
+		0A04E72C2019BF980045C7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A04E72A2019BF980045C7B4 /* LaunchScreen.storyboard */; };
+		0A04E72F2019BF980045C7B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E72E2019BF980045C7B4 /* main.m */; };
+		0A04E7DF2019C8020045C7B4 /* NSArray+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E79C2019C8010045C7B4 /* NSArray+ZHJKit.m */; };
+		0A04E7E02019C8020045C7B4 /* NSDictionary+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E79E2019C8010045C7B4 /* NSDictionary+ZHJKit.m */; };
+		0A04E7E12019C8020045C7B4 /* NSNull+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7A02019C8010045C7B4 /* NSNull+ZHJKit.m */; };
+		0A04E7E22019C8020045C7B4 /* NSObject+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7A22019C8010045C7B4 /* NSObject+ZHJKit.m */; };
+		0A04E7E32019C8020045C7B4 /* NSSet+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7A42019C8010045C7B4 /* NSSet+ZHJKit.m */; };
+		0A04E7E42019C8020045C7B4 /* NSString+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7A62019C8010045C7B4 /* NSString+ZHJKit.m */; };
+		0A04E7E52019C8020045C7B4 /* UIButton+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7A82019C8010045C7B4 /* UIButton+ZHJKit.m */; };
+		0A04E7E62019C8020045C7B4 /* UIColor+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7AA2019C8010045C7B4 /* UIColor+ZHJKit.m */; };
+		0A04E7E72019C8020045C7B4 /* UIImage+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7AC2019C8010045C7B4 /* UIImage+ZHJKit.m */; };
+		0A04E7E82019C8020045C7B4 /* UINavigationController+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7AE2019C8010045C7B4 /* UINavigationController+ZHJKit.m */; };
+		0A04E7E92019C8020045C7B4 /* UITextField+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7B02019C8010045C7B4 /* UITextField+ZHJKit.m */; };
+		0A04E7EA2019C8020045C7B4 /* UITextView+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7B22019C8010045C7B4 /* UITextView+ZHJKit.m */; };
+		0A04E7EB2019C8020045C7B4 /* UIView+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7B42019C8010045C7B4 /* UIView+ZHJKit.m */; };
+		0A04E7EC2019C8020045C7B4 /* UIViewController+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7B62019C8010045C7B4 /* UIViewController+ZHJKit.m */; };
+		0A04E7ED2019C8020045C7B4 /* ZHJBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7BE2019C8010045C7B4 /* ZHJBadgeButton.m */; };
+		0A04E7EE2019C8020045C7B4 /* ZHJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7C02019C8010045C7B4 /* ZHJButton.m */; };
+		0A04E7EF2019C8020045C7B4 /* ZHJCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7C22019C8010045C7B4 /* ZHJCountDownButton.m */; };
+		0A04E7F02019C8020045C7B4 /* ZHJDropDownMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7C42019C8010045C7B4 /* ZHJDropDownMenuBar.m */; };
+		0A04E7F12019C8020045C7B4 /* ZHJGestureUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7C62019C8010045C7B4 /* ZHJGestureUnlockView.m */; };
+		0A04E7F22019C8020045C7B4 /* ZHJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7C82019C8010045C7B4 /* ZHJNavigationController.m */; };
+		0A04E7F32019C8020045C7B4 /* ZHJNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7CA2019C8010045C7B4 /* ZHJNumberPad.m */; };
+		0A04E7F42019C8020045C7B4 /* ZHJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7CC2019C8010045C7B4 /* ZHJTabBarController.m */; };
+		0A04E7F52019C8020045C7B4 /* ZHJVerticalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7CE2019C8010045C7B4 /* ZHJVerticalLabel.m */; };
+		0A04E7F62019C8020045C7B4 /* ZHJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D02019C8010045C7B4 /* ZHJViewController.m */; };
+		0A04E7F72019C8020045C7B4 /* ZHJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D22019C8010045C7B4 /* ZHJWebViewController.m */; };
+		0A04E7F82019C8020045C7B4 /* ZHJDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D52019C8010045C7B4 /* ZHJDeviceInfo.m */; };
+		0A04E7F92019C8020045C7B4 /* ZHJFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D72019C8010045C7B4 /* ZHJFactory.m */; };
+		0A04E7FA2019C8020045C7B4 /* ZHJLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D92019C8010045C7B4 /* ZHJLaunchAd.m */; };
+		0A04E7FB2019C8020045C7B4 /* ZHJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7DB2019C8010045C7B4 /* ZHJPhotoBrowser.m */; };
+		0A04E7FC2019C8020045C7B4 /* ZHJPopups.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7DD2019C8010045C7B4 /* ZHJPopups.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A04E71C2019BF980045C7B4 /* ZHJKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHJKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A04E71F2019BF980045C7B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A04E7202019BF980045C7B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A04E7222019BF980045C7B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A04E7232019BF980045C7B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A04E7262019BF980045C7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A04E7282019BF980045C7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A04E72B2019BF980045C7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A04E72D2019BF980045C7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A04E72E2019BF980045C7B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A04E79B2019C8010045C7B4 /* NSArray+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E79C2019C8010045C7B4 /* NSArray+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E79D2019C8010045C7B4 /* NSDictionary+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E79E2019C8010045C7B4 /* NSDictionary+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E79F2019C8010045C7B4 /* NSNull+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7A02019C8010045C7B4 /* NSNull+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7A12019C8010045C7B4 /* NSObject+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7A22019C8010045C7B4 /* NSObject+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7A32019C8010045C7B4 /* NSSet+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7A42019C8010045C7B4 /* NSSet+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7A52019C8010045C7B4 /* NSString+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7A62019C8010045C7B4 /* NSString+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7A72019C8010045C7B4 /* UIButton+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7A82019C8010045C7B4 /* UIButton+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7A92019C8010045C7B4 /* UIColor+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7AA2019C8010045C7B4 /* UIColor+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7AB2019C8010045C7B4 /* UIImage+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7AC2019C8010045C7B4 /* UIImage+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7AD2019C8010045C7B4 /* UINavigationController+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7AE2019C8010045C7B4 /* UINavigationController+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7AF2019C8010045C7B4 /* UITextField+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7B02019C8010045C7B4 /* UITextField+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7B12019C8010045C7B4 /* UITextView+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7B22019C8010045C7B4 /* UITextView+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7B32019C8010045C7B4 /* UIView+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7B42019C8010045C7B4 /* UIView+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7B52019C8010045C7B4 /* UIViewController+ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZHJKit.h"; sourceTree = "<group>"; };
+		0A04E7B62019C8010045C7B4 /* UIViewController+ZHJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZHJKit.m"; sourceTree = "<group>"; };
+		0A04E7B82019C8010045C7B4 /* ZHJMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJMarco.h; sourceTree = "<group>"; };
+		0A04E7B92019C8010045C7B4 /* ZHJMarcoColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJMarcoColor.h; sourceTree = "<group>"; };
+		0A04E7BA2019C8010045C7B4 /* ZHJMarcoFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJMarcoFunction.h; sourceTree = "<group>"; };
+		0A04E7BB2019C8010045C7B4 /* ZHJMarcoSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJMarcoSystem.h; sourceTree = "<group>"; };
+		0A04E7BD2019C8010045C7B4 /* ZHJBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJBadgeButton.h; sourceTree = "<group>"; };
+		0A04E7BE2019C8010045C7B4 /* ZHJBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJBadgeButton.m; sourceTree = "<group>"; };
+		0A04E7BF2019C8010045C7B4 /* ZHJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJButton.h; sourceTree = "<group>"; };
+		0A04E7C02019C8010045C7B4 /* ZHJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJButton.m; sourceTree = "<group>"; };
+		0A04E7C12019C8010045C7B4 /* ZHJCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJCountDownButton.h; sourceTree = "<group>"; };
+		0A04E7C22019C8010045C7B4 /* ZHJCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJCountDownButton.m; sourceTree = "<group>"; };
+		0A04E7C32019C8010045C7B4 /* ZHJDropDownMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJDropDownMenuBar.h; sourceTree = "<group>"; };
+		0A04E7C42019C8010045C7B4 /* ZHJDropDownMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJDropDownMenuBar.m; sourceTree = "<group>"; };
+		0A04E7C52019C8010045C7B4 /* ZHJGestureUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJGestureUnlockView.h; sourceTree = "<group>"; };
+		0A04E7C62019C8010045C7B4 /* ZHJGestureUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJGestureUnlockView.m; sourceTree = "<group>"; };
+		0A04E7C72019C8010045C7B4 /* ZHJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNavigationController.h; sourceTree = "<group>"; };
+		0A04E7C82019C8010045C7B4 /* ZHJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNavigationController.m; sourceTree = "<group>"; };
+		0A04E7C92019C8010045C7B4 /* ZHJNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNumberPad.h; sourceTree = "<group>"; };
+		0A04E7CA2019C8010045C7B4 /* ZHJNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNumberPad.m; sourceTree = "<group>"; };
+		0A04E7CB2019C8010045C7B4 /* ZHJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJTabBarController.h; sourceTree = "<group>"; };
+		0A04E7CC2019C8010045C7B4 /* ZHJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJTabBarController.m; sourceTree = "<group>"; };
+		0A04E7CD2019C8010045C7B4 /* ZHJVerticalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJVerticalLabel.h; sourceTree = "<group>"; };
+		0A04E7CE2019C8010045C7B4 /* ZHJVerticalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJVerticalLabel.m; sourceTree = "<group>"; };
+		0A04E7CF2019C8010045C7B4 /* ZHJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJViewController.h; sourceTree = "<group>"; };
+		0A04E7D02019C8010045C7B4 /* ZHJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJViewController.m; sourceTree = "<group>"; };
+		0A04E7D12019C8010045C7B4 /* ZHJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJWebViewController.h; sourceTree = "<group>"; };
+		0A04E7D22019C8010045C7B4 /* ZHJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJWebViewController.m; sourceTree = "<group>"; };
+		0A04E7D42019C8010045C7B4 /* ZHJDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJDeviceInfo.h; sourceTree = "<group>"; };
+		0A04E7D52019C8010045C7B4 /* ZHJDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJDeviceInfo.m; sourceTree = "<group>"; };
+		0A04E7D62019C8010045C7B4 /* ZHJFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJFactory.h; sourceTree = "<group>"; };
+		0A04E7D72019C8010045C7B4 /* ZHJFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJFactory.m; sourceTree = "<group>"; };
+		0A04E7D82019C8010045C7B4 /* ZHJLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJLaunchAd.h; sourceTree = "<group>"; };
+		0A04E7D92019C8010045C7B4 /* ZHJLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJLaunchAd.m; sourceTree = "<group>"; };
+		0A04E7DA2019C8010045C7B4 /* ZHJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJPhotoBrowser.h; sourceTree = "<group>"; };
+		0A04E7DB2019C8010045C7B4 /* ZHJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJPhotoBrowser.m; sourceTree = "<group>"; };
+		0A04E7DC2019C8010045C7B4 /* ZHJPopups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJPopups.h; sourceTree = "<group>"; };
+		0A04E7DD2019C8010045C7B4 /* ZHJPopups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJPopups.m; sourceTree = "<group>"; };
+		0A04E7DE2019C8010045C7B4 /* ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A04E7192019BF980045C7B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A04E7132019BF980045C7B4 = {
+			isa = PBXGroup;
+			children = (
+				0A04E7992019C8010045C7B4 /* ZHJKit */,
+				0A04E71E2019BF980045C7B4 /* ZHJKitDemo */,
+				0A04E71D2019BF980045C7B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A04E71D2019BF980045C7B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A04E71C2019BF980045C7B4 /* ZHJKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A04E71E2019BF980045C7B4 /* ZHJKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0A04E71F2019BF980045C7B4 /* AppDelegate.h */,
+				0A04E7202019BF980045C7B4 /* AppDelegate.m */,
+				0A04E7222019BF980045C7B4 /* ViewController.h */,
+				0A04E7232019BF980045C7B4 /* ViewController.m */,
+				0A04E7252019BF980045C7B4 /* Main.storyboard */,
+				0A04E7282019BF980045C7B4 /* Assets.xcassets */,
+				0A04E72A2019BF980045C7B4 /* LaunchScreen.storyboard */,
+				0A04E72D2019BF980045C7B4 /* Info.plist */,
+				0A04E72E2019BF980045C7B4 /* main.m */,
+			);
+			path = ZHJKitDemo;
+			sourceTree = "<group>";
+		};
+		0A04E7992019C8010045C7B4 /* ZHJKit */ = {
+			isa = PBXGroup;
+			children = (
+				0A04E79A2019C8010045C7B4 /* Category */,
+				0A04E7B72019C8010045C7B4 /* Marco */,
+				0A04E7BC2019C8010045C7B4 /* UI */,
+				0A04E7D32019C8010045C7B4 /* Utility */,
+				0A04E7DE2019C8010045C7B4 /* ZHJKit.h */,
+			);
+			name = ZHJKit;
+			path = ../ZHJKit;
+			sourceTree = "<group>";
+		};
+		0A04E79A2019C8010045C7B4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A04E79F2019C8010045C7B4 /* NSNull+ZHJKit.h */,
+				0A04E7A02019C8010045C7B4 /* NSNull+ZHJKit.m */,
+				0A04E7A12019C8010045C7B4 /* NSObject+ZHJKit.h */,
+				0A04E7A22019C8010045C7B4 /* NSObject+ZHJKit.m */,
+				0A04E7A32019C8010045C7B4 /* NSSet+ZHJKit.h */,
+				0A04E7A42019C8010045C7B4 /* NSSet+ZHJKit.m */,
+				0A04E79B2019C8010045C7B4 /* NSArray+ZHJKit.h */,
+				0A04E79C2019C8010045C7B4 /* NSArray+ZHJKit.m */,
+				0A04E79D2019C8010045C7B4 /* NSDictionary+ZHJKit.h */,
+				0A04E79E2019C8010045C7B4 /* NSDictionary+ZHJKit.m */,
+				0A04E7A52019C8010045C7B4 /* NSString+ZHJKit.h */,
+				0A04E7A62019C8010045C7B4 /* NSString+ZHJKit.m */,
+				0A04E7A92019C8010045C7B4 /* UIColor+ZHJKit.h */,
+				0A04E7AA2019C8010045C7B4 /* UIColor+ZHJKit.m */,
+				0A04E7AB2019C8010045C7B4 /* UIImage+ZHJKit.h */,
+				0A04E7AC2019C8010045C7B4 /* UIImage+ZHJKit.m */,
+				0A04E7B32019C8010045C7B4 /* UIView+ZHJKit.h */,
+				0A04E7B42019C8010045C7B4 /* UIView+ZHJKit.m */,
+				0A04E7A72019C8010045C7B4 /* UIButton+ZHJKit.h */,
+				0A04E7A82019C8010045C7B4 /* UIButton+ZHJKit.m */,
+				0A04E7AF2019C8010045C7B4 /* UITextField+ZHJKit.h */,
+				0A04E7B02019C8010045C7B4 /* UITextField+ZHJKit.m */,
+				0A04E7B12019C8010045C7B4 /* UITextView+ZHJKit.h */,
+				0A04E7B22019C8010045C7B4 /* UITextView+ZHJKit.m */,
+				0A04E7AD2019C8010045C7B4 /* UINavigationController+ZHJKit.h */,
+				0A04E7AE2019C8010045C7B4 /* UINavigationController+ZHJKit.m */,
+				0A04E7B52019C8010045C7B4 /* UIViewController+ZHJKit.h */,
+				0A04E7B62019C8010045C7B4 /* UIViewController+ZHJKit.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0A04E7B72019C8010045C7B4 /* Marco */ = {
+			isa = PBXGroup;
+			children = (
+				0A04E7B82019C8010045C7B4 /* ZHJMarco.h */,
+				0A04E7B92019C8010045C7B4 /* ZHJMarcoColor.h */,
+				0A04E7BA2019C8010045C7B4 /* ZHJMarcoFunction.h */,
+				0A04E7BB2019C8010045C7B4 /* ZHJMarcoSystem.h */,
+			);
+			path = Marco;
+			sourceTree = "<group>";
+		};
+		0A04E7BC2019C8010045C7B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0A04E7BF2019C8010045C7B4 /* ZHJButton.h */,
+				0A04E7C02019C8010045C7B4 /* ZHJButton.m */,
+				0A04E7BD2019C8010045C7B4 /* ZHJBadgeButton.h */,
+				0A04E7BE2019C8010045C7B4 /* ZHJBadgeButton.m */,
+				0A04E7C12019C8010045C7B4 /* ZHJCountDownButton.h */,
+				0A04E7C22019C8010045C7B4 /* ZHJCountDownButton.m */,
+				0A04E7C32019C8010045C7B4 /* ZHJDropDownMenuBar.h */,
+				0A04E7C42019C8010045C7B4 /* ZHJDropDownMenuBar.m */,
+				0A04E7C52019C8010045C7B4 /* ZHJGestureUnlockView.h */,
+				0A04E7C62019C8010045C7B4 /* ZHJGestureUnlockView.m */,
+				0A04E7C92019C8010045C7B4 /* ZHJNumberPad.h */,
+				0A04E7CA2019C8010045C7B4 /* ZHJNumberPad.m */,
+				0A04E7CD2019C8010045C7B4 /* ZHJVerticalLabel.h */,
+				0A04E7CE2019C8010045C7B4 /* ZHJVerticalLabel.m */,
+				0A04E7CB2019C8010045C7B4 /* ZHJTabBarController.h */,
+				0A04E7CC2019C8010045C7B4 /* ZHJTabBarController.m */,
+				0A04E7C72019C8010045C7B4 /* ZHJNavigationController.h */,
+				0A04E7C82019C8010045C7B4 /* ZHJNavigationController.m */,
+				0A04E7CF2019C8010045C7B4 /* ZHJViewController.h */,
+				0A04E7D02019C8010045C7B4 /* ZHJViewController.m */,
+				0A04E7D12019C8010045C7B4 /* ZHJWebViewController.h */,
+				0A04E7D22019C8010045C7B4 /* ZHJWebViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0A04E7D32019C8010045C7B4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0A04E7D62019C8010045C7B4 /* ZHJFactory.h */,
+				0A04E7D72019C8010045C7B4 /* ZHJFactory.m */,
+				0A04E7DC2019C8010045C7B4 /* ZHJPopups.h */,
+				0A04E7DD2019C8010045C7B4 /* ZHJPopups.m */,
+				0A04E7D82019C8010045C7B4 /* ZHJLaunchAd.h */,
+				0A04E7D92019C8010045C7B4 /* ZHJLaunchAd.m */,
+				0A04E7D42019C8010045C7B4 /* ZHJDeviceInfo.h */,
+				0A04E7D52019C8010045C7B4 /* ZHJDeviceInfo.m */,
+				0A04E7DA2019C8010045C7B4 /* ZHJPhotoBrowser.h */,
+				0A04E7DB2019C8010045C7B4 /* ZHJPhotoBrowser.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A04E71B2019BF980045C7B4 /* ZHJKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A04E7322019BF980045C7B4 /* Build configuration list for PBXNativeTarget "ZHJKitDemo" */;
+			buildPhases = (
+				0A04E7182019BF980045C7B4 /* Sources */,
+				0A04E7192019BF980045C7B4 /* Frameworks */,
+				0A04E71A2019BF980045C7B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHJKitDemo;
+			productName = ZHJKitDemo;
+			productReference = 0A04E71C2019BF980045C7B4 /* ZHJKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A04E7142019BF980045C7B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Huajing Zeng";
+				TargetAttributes = {
+					0A04E71B2019BF980045C7B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A04E7172019BF980045C7B4 /* Build configuration list for PBXProject "ZHJKitDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A04E7132019BF980045C7B4;
+			productRefGroup = 0A04E71D2019BF980045C7B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A04E71B2019BF980045C7B4 /* ZHJKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A04E71A2019BF980045C7B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A04E72C2019BF980045C7B4 /* LaunchScreen.storyboard in Resources */,
+				0A04E7292019BF980045C7B4 /* Assets.xcassets in Resources */,
+				0A04E7272019BF980045C7B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A04E7182019BF980045C7B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A04E7EF2019C8020045C7B4 /* ZHJCountDownButton.m in Sources */,
+				0A04E7242019BF980045C7B4 /* ViewController.m in Sources */,
+				0A04E7F72019C8020045C7B4 /* ZHJWebViewController.m in Sources */,
+				0A04E7EC2019C8020045C7B4 /* UIViewController+ZHJKit.m in Sources */,
+				0A04E7F32019C8020045C7B4 /* ZHJNumberPad.m in Sources */,
+				0A04E72F2019BF980045C7B4 /* main.m in Sources */,
+				0A04E7FB2019C8020045C7B4 /* ZHJPhotoBrowser.m in Sources */,
+				0A04E7EB2019C8020045C7B4 /* UIView+ZHJKit.m in Sources */,
+				0A04E7F62019C8020045C7B4 /* ZHJViewController.m in Sources */,
+				0A04E7FC2019C8020045C7B4 /* ZHJPopups.m in Sources */,
+				0A04E7E02019C8020045C7B4 /* NSDictionary+ZHJKit.m in Sources */,
+				0A04E7DF2019C8020045C7B4 /* NSArray+ZHJKit.m in Sources */,
+				0A04E7FA2019C8020045C7B4 /* ZHJLaunchAd.m in Sources */,
+				0A04E7E42019C8020045C7B4 /* NSString+ZHJKit.m in Sources */,
+				0A04E7E82019C8020045C7B4 /* UINavigationController+ZHJKit.m in Sources */,
+				0A04E7E22019C8020045C7B4 /* NSObject+ZHJKit.m in Sources */,
+				0A04E7F42019C8020045C7B4 /* ZHJTabBarController.m in Sources */,
+				0A04E7F02019C8020045C7B4 /* ZHJDropDownMenuBar.m in Sources */,
+				0A04E7E92019C8020045C7B4 /* UITextField+ZHJKit.m in Sources */,
+				0A04E7E32019C8020045C7B4 /* NSSet+ZHJKit.m in Sources */,
+				0A04E7F12019C8020045C7B4 /* ZHJGestureUnlockView.m in Sources */,
+				0A04E7E72019C8020045C7B4 /* UIImage+ZHJKit.m in Sources */,
+				0A04E7F92019C8020045C7B4 /* ZHJFactory.m in Sources */,
+				0A04E7ED2019C8020045C7B4 /* ZHJBadgeButton.m in Sources */,
+				0A04E7212019BF980045C7B4 /* AppDelegate.m in Sources */,
+				0A04E7F52019C8020045C7B4 /* ZHJVerticalLabel.m in Sources */,
+				0A04E7EA2019C8020045C7B4 /* UITextView+ZHJKit.m in Sources */,
+				0A04E7F82019C8020045C7B4 /* ZHJDeviceInfo.m in Sources */,
+				0A04E7E12019C8020045C7B4 /* NSNull+ZHJKit.m in Sources */,
+				0A04E7E62019C8020045C7B4 /* UIColor+ZHJKit.m in Sources */,
+				0A04E7F22019C8020045C7B4 /* ZHJNavigationController.m in Sources */,
+				0A04E7E52019C8020045C7B4 /* UIButton+ZHJKit.m in Sources */,
+				0A04E7EE2019C8020045C7B4 /* ZHJButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A04E7252019BF980045C7B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A04E7262019BF980045C7B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A04E72A2019BF980045C7B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A04E72B2019BF980045C7B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A04E7302019BF980045C7B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A04E7312019BF980045C7B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A04E7332019BF980045C7B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WX2364KU;
+				INFOPLIST_FILE = ZHJKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenghuajing.ZHJKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A04E7342019BF980045C7B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WX2364KU;
+				INFOPLIST_FILE = ZHJKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenghuajing.ZHJKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A04E7172019BF980045C7B4 /* Build configuration list for PBXProject "ZHJKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A04E7302019BF980045C7B4 /* Debug */,
+				0A04E7312019BF980045C7B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A04E7322019BF980045C7B4 /* Build configuration list for PBXNativeTarget "ZHJKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A04E7332019BF980045C7B4 /* Debug */,
+				0A04E7342019BF980045C7B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A04E7142019BF980045C7B4 /* Project object */;
+}
