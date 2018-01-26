@@ -15,14 +15,12 @@
 #import "NSArray+ZHJKit.h"
 #import "NSDictionary+ZHJKit.h"
 #import "NSString+ZHJKit.h"
-
 #import "UIColor+ZHJKit.h"
 #import "UIImage+ZHJKit.h"
 #import "UIView+ZHJKit.h"
 #import "UIButton+ZHJKit.h"
 #import "UITextField+ZHJKit.h"
 #import "UITextView+ZHJKit.h"
-
 #import "UINavigationController+ZHJKit.h"
 #import "UIViewController+ZHJKit.h"
 
@@ -38,10 +36,15 @@
 #import "ZHJGestureUnlockView.h"
 #import "ZHJNumberPad.h"
 #import "ZHJVerticalLabel.h"
-
 #import "ZHJTabBarController.h"
 #import "ZHJNavigationController.h"
 #import "ZHJViewController.h"
 #import "ZHJWebViewController.h"
+
+#import "ZHJFactory.h"
+#import "ZHJPopups.h"
+#import "ZHJLaunchAd.h"
+#import "ZHJDeviceInfo.h"
+#import "ZHJPhotoBrowser.h"
 
 #endif /* ZHJKit_h */
