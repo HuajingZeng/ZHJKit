@@ -11,31 +11,30 @@ Pod::Spec.new do |s|
   s.source_files  = "ZHJKit/ZHJKit.h"
   s.public_header_files = "ZHJKit/ZHJKit.h"
   s.requires_arc = true
+  s.frameworks = 'UIKit'
 
   s.subspec 'Category' do |ss|
-    ss.source_files = 'ZHJKit/Category/*.{h,m}'
     ss.public_header_files = 'ZHJKit/Category/*.h'
-    ss.ios.frameworks = 'UIKit'
+    ss.source_files = 'ZHJKit/Category/*.{h,m}'
   end
 
   s.subspec 'Marco' do |ss|
-    ss.source_files = 'ZHJKit/Marco/*.{h,m}'
     ss.public_header_files = 'ZHJKit/Marco/*.h'
-    ss.ios.frameworks = 'UIKit'
+    ss.source_files = 'ZHJKit/Marco/*.{h,m}'
   end
 
   s.subspec 'UI' do |ss|
-    ss.source_files = 'ZHJKit/UI/*.{h,m}'
+    ss.dependency 'ZHJKit/Marco'
+    ss.dependency 'ZHJKit/Category'
+    ss.dependency 'ZHJKit/Utility'
     ss.public_header_files = 'ZHJKit/UI/*.h'
-    ss.ios.frameworks = 'UIKit'
-    ss.dependency 'ZHJKit/Marco', 'ZHJKit/Category', 'ZHJKit/Utility'
+    ss.source_files = 'ZHJKit/UI/*.{h,m}'
   end
 
   s.subspec 'Utility' do |ss|
-    ss.source_files = 'ZHJKit/Utility/*.{h,m}'
-    ss.public_header_files = 'ZHJKit/Utility/*.h'
-    ss.ios.frameworks = 'UIKit'
     ss.dependency 'ZHJKit/Marco'
+    ss.public_header_files = 'ZHJKit/Utility/*.h'
+    ss.source_files = 'ZHJKit/Utility/*.{h,m}'
   end
 
 end
