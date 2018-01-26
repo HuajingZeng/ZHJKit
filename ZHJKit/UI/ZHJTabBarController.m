@@ -24,7 +24,7 @@
 #pragma mark - Getter
 - (UIView *)tabBarTopLineView {
     if (_tabBarTopLineView) {
-        _tabBarTopLineView = [HJFactory viewFrame:CGRectMake(0, 0, ZHJ_SCREEN_WIDTH, 0.5) bgColor:self.tabBarTopLineColor];
+        _tabBarTopLineView = [ZHJFactory viewFrame:CGRectMake(0, 0, ZHJ_SCREEN_WIDTH, 0.5) bgColor:self.tabBarTopLineColor];
     }
     return _tabBarTopLineView;
 }

@@ -9,7 +9,7 @@
 #import "ZHJFactory.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation HJFactory
+@implementation ZHJFactory
 
 #pragma mark - Foundation
 //nonce

@@ -142,7 +142,7 @@ static ZHJLaunchAd *_launchAd;
     }
     for (NSInteger i=0; i<self.imageCount; i++) {
         NSString *imageName = [NSString stringWithFormat:@"HJLaunch-%01ld", (long)i+1];
-        UIButton *btn = [HJFactory buttonFrame:CGRectMake(i*ZHJ_SCREEN_WIDTH, 0, ZHJ_SCREEN_WIDTH, ZHJ_SCREEN_HEIGHT) title:@"" fontSize:0 titleColor:nil image:ZHJ_IMAGE(imageName) bgColor:[UIColor whiteColor]];
+        UIButton *btn = [ZHJFactory buttonFrame:CGRectMake(i*ZHJ_SCREEN_WIDTH, 0, ZHJ_SCREEN_WIDTH, ZHJ_SCREEN_HEIGHT) title:@"" fontSize:0 titleColor:nil image:ZHJ_IMAGE(imageName) bgColor:[UIColor whiteColor]];
         btn.backgroundColor = i==0 ? [UIColor whiteColor] : ZHJ_HEXCOLOR(0xFEFDE0, 1.0);
         btn.tag = i+1;
         [btn addTarget:self action:@selector(btnTap:) forControlEvents:UIControlEventTouchUpInside];

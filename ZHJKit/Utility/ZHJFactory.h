@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, DateAccuracy) {
     DateAccuracySecond = 3,
 };
 
-@interface HJFactory : NSObject
+@interface ZHJFactory : NSObject
 
 #pragma mark - Foundation
 //nonce

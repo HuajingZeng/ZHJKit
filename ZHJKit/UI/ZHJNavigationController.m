@@ -33,7 +33,7 @@
 
 - (UIView *)navigationBarBottomLineView {
     if (!_navigationBarBottomLineView) {
-        _navigationBarBottomLineView = [HJFactory viewFrame:CGRectMake(0, 43, ZHJ_SCREEN_WIDTH, 1) bgColor:self.navigationBarBottomLineColor];
+        _navigationBarBottomLineView = [ZHJFactory viewFrame:CGRectMake(0, 43, ZHJ_SCREEN_WIDTH, 1) bgColor:self.navigationBarBottomLineColor];
     }
     return _navigationBarBottomLineView;
 }
