@@ -151,10 +151,12 @@
     CGFloat insetY = (CGRectGetHeight(self.bounds) - CGRectGetHeight(_imageView.frame))/2;
     insetY = MAX(insetY, 0.0);
     if (ABS(_imageView.frame.origin.y - insetY) > 0.5) {
+        ZHJ_WEAK_OBJ(self);
         [UIView animateWithDuration:0.2 animations:^{
-            CGRect imageViewFrame = _imageView.frame;
+            ZHJ_STRONG_OBJ(self);
+            CGRect imageViewFrame = self.imageView.frame;
             imageViewFrame = CGRectMake(imageViewFrame.origin.x, insetY, imageViewFrame.size.width, imageViewFrame.size.height);
-            _imageView.frame = imageViewFrame;
+            self.imageView.frame = imageViewFrame;
         }];
     }
 }

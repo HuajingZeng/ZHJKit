@@ -44,7 +44,7 @@
 #import "ZHJFactory.h"
 #import "ZHJPopups.h"
 #import "ZHJLaunchAd.h"
-#import "ZHJDeviceInfo.h"
+#import "ZHJDevice.h"
 #import "ZHJPhotoBrowser.h"
 
 #endif /* ZHJKit_h */

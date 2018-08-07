@@ -24,7 +24,7 @@
 + (NSInteger)numOfDaysInYear:(NSInteger)year month:(NSInteger)month {
     NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM"];
-    NSString * dateString = [NSString stringWithFormat:@"%04ld-%02ld", year, month];
+    NSString * dateString = [NSString stringWithFormat:@"%04ld-%02ld", (long)year, (long)month];
     NSDate * date = [formatter dateFromString:dateString];
     NSCalendar * calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSRange range = [calendar rangeOfUnit:NSCalendarUnitDay inUnit: NSCalendarUnitMonth forDate:date];

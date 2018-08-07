@@ -81,10 +81,10 @@ static ZHJPopups *_popups;
 
 #pragma mark - Public Methods
 - (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void (^)(void))completion {
-    [self popupView:view inViewController:(UIViewController *)viewController backgroundColor:backgroundColor animationType:animationType completion:completion showCloseBtn:NO tapOutsideToDismiss:NO dismissCompletion:nil];
+    [self popupView:view inViewController:(UIViewController *)viewController backgroundColor:backgroundColor animationType:animationType completion:completion tapOutsideToDismiss:NO dismissCompletion:nil];
 }
 
-- (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void (^)(void))completion showCloseBtn:(BOOL)show tapOutsideToDismiss:(BOOL)tap dismissCompletion:(void (^)(void))dismissCompletion{
+- (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void (^)(void))completion tapOutsideToDismiss:(BOOL)tap dismissCompletion:(void (^)(void))dismissCompletion{
     ZHJ_WEAK_OBJ(self);
     dispatch_async(dispatch_get_main_queue(), ^{
         ZHJ_STRONG_OBJ(self);
@@ -92,14 +92,6 @@ static ZHJPopups *_popups;
         maskView.backgroundColor = backgroundColor;
         [maskView addSubview:view];
         [viewController.view addSubview:maskView];
-        
-        if (show) {
-            UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake(view.frame.size.width-24, 0, 24, 24)];
-            [closeBtn setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
-            [closeBtn addTarget:self action:@selector(_dismiss) forControlEvents:UIControlEventTouchUpInside];
-            self.dismissCompletion = dismissCompletion;
-            [view addSubview:closeBtn];
-        }
         
         if (tap){
             [maskView addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];

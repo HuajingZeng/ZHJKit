@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, ZHJPopupsAnimationType){
  Popup
  */
 - (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion;
-- (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion showCloseBtn:(BOOL)show tapOutsideToDismiss:(BOOL)tap dismissCompletion:(void(^)(void))dismissCompletion;
+- (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion tapOutsideToDismiss:(BOOL)tap dismissCompletion:(void(^)(void))dismissCompletion;
 
 /**
  Dismiss
