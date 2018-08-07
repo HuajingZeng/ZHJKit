@@ -23,9 +23,10 @@
 #define ZHJ_SCREEN_SIZE             ([UIScreen mainScreen].bounds.size)
 #define ZHJ_SCALE                   ([UIScreen mainScreen].bounds.size.width/375.0)
 #define ZHJ_IS_IPHONEX              ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? [[UIScreen mainScreen] currentMode].size.height==2436 : NO)
-#define ZHJ_STATUSBAR_HEIGHT        (ZHJ_IS_IPHONEX ? 44 : 20)
-#define ZHJ_NAVBAR_HEIGHT           (ZHJ_IS_IPHONEX ? 88 : 64)
+#define ZHJ_STATUSBAR_HEIGHT        ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define ZHJ_NAVBAR_HEIGHT           44
 #define ZHJ_TABBAR_HEIGHT           (ZHJ_IS_IPHONEX ? 83 : 49)
+#define ZHJ_INDICATOR_HEIGHT        (IS_IPHONEX ? 34 : 0)
 
 #define ZHJ_DOCUMENT_PATH           ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject])
 #define ZHJ_CACHE_PATH              ([NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject])

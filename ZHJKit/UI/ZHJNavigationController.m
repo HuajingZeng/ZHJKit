@@ -26,7 +26,7 @@
 #pragma mark - Getter
 - (UIImageView *)navigationBarBackgroundView {
     if (!_navigationBarBackgroundView) {
-        _navigationBarBackgroundView = ZHJ_IMAGEVIEW(CGRectMake(0, -ZHJ_STATUSBAR_HEIGHT, ZHJ_SCREEN_WIDTH, ZHJ_NAVBAR_HEIGHT));
+        _navigationBarBackgroundView = ZHJ_IMAGE_VIEW(CGRectMake(0, -ZHJ_STATUSBAR_HEIGHT, ZHJ_SCREEN_WIDTH, ZHJ_NAVBAR_HEIGHT));
     }
     return _navigationBarBackgroundView;
 }

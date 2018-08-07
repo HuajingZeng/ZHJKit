@@ -11,5 +11,6 @@
 @interface UIColor (ZHJKit)
 
 + (UIColor *)colorWithHexString:(NSString *)color;
++ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
 
 @end

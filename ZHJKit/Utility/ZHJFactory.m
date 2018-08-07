@@ -34,45 +34,6 @@
     return output;
 }
 
-//DateString
-+ (NSString *)formatDate:(NSDate *)date withString:(NSString *)string {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:string];
-    return [formatter stringFromDate:date];
-}
-
-+ (NSString *)formatDateFrom:(NSDate *)startDate to:(NSDate *)endDate accuracy:(DateAccuracy)dateAccuracy{
-    int leftTime = (int)[endDate timeIntervalSinceDate:startDate];
-    if (leftTime>0) {
-        int day = (leftTime-leftTime%(24*3600))/(24*3600);
-        leftTime = leftTime%(24*3600);
-        int hour = (leftTime-leftTime%3600)/3600;
-        leftTime = leftTime%3600;
-        int minute = (leftTime-leftTime%60)/60;
-        leftTime = leftTime%60;
-        int second = leftTime;
-        NSString *dayStr = day>0 ? [NSString stringWithFormat:@"%d天", day] : @"";
-        NSString *hourStr = hour>0 ? [NSString stringWithFormat:@"%d小时", hour] : @"";
-        NSString *minuteStr = minute>0 ? [NSString stringWithFormat:@"%d分钟", minute] : @"";
-        NSString *secondStr = second>0 ? [NSString stringWithFormat:@"%d秒", second] : @"";
-        switch (dateAccuracy) {
-            case DateAccuracyDay: return [NSString stringWithFormat:@"%@", dayStr];
-            case DateAccuracyHour: return [NSString stringWithFormat:@"%@%@", dayStr, hourStr];
-            case DateAccuracyMinute: return [NSString stringWithFormat:@"%@%@%@", dayStr, hourStr, minuteStr];
-            default: return [NSString stringWithFormat:@"%@%@%@%@", dayStr, hourStr, minuteStr, secondStr];
-        }
-    }else {
-        return @"";
-    }
-}
-
-+ (NSDate *)dateFormDateString:(NSString *)dateString formatString:(NSString *)formatString {
-    NSDateFormatter* dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:formatString];
-    NSDate *date =[dateFormat dateFromString:dateString];
-    return date;
-}
-
 //UIView
 + (UIView *)viewFrame:(CGRect)frame bgColor:(UIColor *)bgColor {
     UIView *view = [[UIView alloc] initWithFrame:frame];

@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#define ZHJPOPUPS      ([ZHJPopups sharedInstance])
+@interface UIApplication (ZHJPopups)
+- (UIViewController *)presentedRootViewController;
+@end
+
+#define ZHJ_POPUPS      ([ZHJPopups sharedInstance])
 
 /**
  Popup animation effects
@@ -37,18 +41,19 @@ typedef NS_ENUM(NSInteger, ZHJPopupsAnimationType){
 /**
  Popup
  */
-- (void)popupView:(UIView *)view backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion;
-- (void)popupView:(UIView *)view backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion showCloseBtn:(BOOL)show tapOutsideToDismiss:(BOOL)tap dismissCompletion:(void(^)(void))dismissCompletion;
+- (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion;
+- (void)popupView:(UIView *)view inViewController:(UIViewController *)viewController backgroundColor:(UIColor *)backgroundColor animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion showCloseBtn:(BOOL)show tapOutsideToDismiss:(BOOL)tap dismissCompletion:(void(^)(void))dismissCompletion;
 
 /**
  Dismiss
  */
-- (void)dismissView:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion;
+- (void)dismissView:(UIView *)view animationType:(ZHJPopupsAnimationType)animationType completion:(void(^)(void))completion;
+- (void)dismissAll;
 
 /**
  Message
  */
-- (void)showMessage:(NSString *)text duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay completion:(void(^)(void))completion;
-- (void)showMessage:(NSString *)text completion:(void(^)(void))completion;
+- (void)showMessage:(NSString *)text inViewController:(UIViewController *)viewController duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay completion:(void(^)(void))completion;
+- (void)showMessage:(NSString *)text inViewController:(UIViewController *)viewController completion:(void(^)(void))completion;
 
 @end

@@ -103,7 +103,8 @@
         }
     } else {
         _imageView.image = self.photo.placeHolder;
-        [ZHJPOPUPS showMessage:@"图片加载失败" completion:nil];
+        UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        [ZHJ_POPUPS showMessage:@"图片加载失败" inViewController:rootViewController completion:nil];
     }
     [self adjustFrame];
 }
@@ -204,7 +205,8 @@
 
 - (void)show {
     if (_photos.count==0) {
-        [ZHJPOPUPS showMessage:@"无图片" completion:nil];
+        UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        [ZHJ_POPUPS showMessage:@"无图片" inViewController:rootViewController completion:nil];
         return;
     }
     
@@ -345,7 +347,8 @@
     if (self.loadCurrentImageBlock) {
         self.loadCurrentImageBlock(photoView.imageView, [NSURL URLWithString:photoView.photo.url]);
     }else {
-        [ZHJPOPUPS showMessage:@"图片加载失败" completion:nil];
+        UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        [ZHJ_POPUPS showMessage:@"图片加载失败" inViewController:rootViewController completion:nil];
         photoView.imageView.image = ZHJ_IMAGE(@"Placeholder");
     }
 }
@@ -383,10 +386,11 @@
 }
 
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     if (error) {
-        [ZHJPOPUPS showMessage:@"保存失败" completion:nil];
+        [ZHJ_POPUPS showMessage:@"保存失败" inViewController:rootViewController completion:nil];
     } else {
-        [ZHJPOPUPS showMessage:@"保存成功" completion:nil];
+        [ZHJ_POPUPS showMessage:@"保存成功" inViewController:rootViewController completion:nil];
     }
 }
 

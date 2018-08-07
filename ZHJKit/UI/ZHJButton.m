@@ -35,15 +35,15 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame space:(CGFloat)space {
-    return [self initWithFrame:frame imageDirection:ZHJButtonImageDirectionLeft space:space titleSize:CGSizeZero iamgeSize:CGSizeZero];
+    return [self initWithFrame:frame imageDirection:ZHJButtonImageDirectionDefault space:space titleSize:CGSizeZero iamgeSize:CGSizeZero];
 }
 
 - (instancetype)init {
-    return [self initWithFrame:CGRectZero imageDirection:ZHJButtonImageDirectionLeft space:0 titleSize:CGSizeZero iamgeSize:CGSizeZero];
+    return [self initWithFrame:CGRectZero imageDirection:ZHJButtonImageDirectionDefault space:0 titleSize:CGSizeZero iamgeSize:CGSizeZero];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    return [self initWithFrame:frame imageDirection:ZHJButtonImageDirectionLeft space:0 titleSize:CGSizeZero iamgeSize:CGSizeZero];
+    return [self initWithFrame:frame imageDirection:ZHJButtonImageDirectionDefault space:0 titleSize:CGSizeZero iamgeSize:CGSizeZero];
 }
 
 #pragma mark - <NSCoding>
@@ -119,6 +119,11 @@
             [self.titleLabel setTextAlignment:NSTextAlignmentCenter];
             
             [self.imageView setFrame:CGRectMake((width-imageWidth)/2, self.titleLabel.frame.origin.y+titleHeight+_space, imageWidth, imageHeight)];
+            break;
+        }
+            
+        default:
+        {
             break;
         }
     }

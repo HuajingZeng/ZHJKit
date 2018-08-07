@@ -11,6 +11,10 @@
 @implementation UIColor (ZHJKit)
 
 + (UIColor *)colorWithHexString:(NSString *)color {
+    return [self colorWithHexString:color alpha:1.0];
+}
+
++ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     if ([cString length] < 6) {
         return [UIColor clearColor];
@@ -38,7 +42,7 @@
     [[NSScanner scannerWithString:gString] scanHexInt:&g];
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     
-    return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
+    return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:alpha];
 }
 
 @end

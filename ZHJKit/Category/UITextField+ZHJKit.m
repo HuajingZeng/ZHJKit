@@ -69,7 +69,7 @@ static const char *_valueChangeBlock = "_valueChangeBlock";
 }
 
 - (void)config {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(valueChanged) name:UITextFieldTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(valueChanged) name:UITextFieldTextDidChangeNotification object:self];
     NSArray *illegalStrings = @[@"\"", @"\'"];
     [self setIllegalStrings:illegalStrings];
 }

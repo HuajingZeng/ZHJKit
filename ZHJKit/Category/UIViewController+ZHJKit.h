@@ -10,6 +10,6 @@
 
 @interface UIViewController (ZHJKit)
 
-- (void)dismissAnimated:(BOOL)animated completion:(void(^)(void))completion;
+- (void)dismissAllAnimated:(BOOL)animated completion:(void(^)(void))completion;
 
 @end

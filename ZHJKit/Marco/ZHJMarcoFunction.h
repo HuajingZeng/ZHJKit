@@ -29,8 +29,8 @@
 
 #define ZHJ_SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-#define ZHJ_WEAK_SELF(type)                 __weak typeof(type) weak##type = type
-#define ZHJ_STRONG_SELF(type)               __strong typeof(type) type = weak##type
+#define ZHJ_WEAK_OBJ(type)                  __weak typeof(type) type##Weak = type
+#define ZHJ_STRONG_OBJ(type)                __strong typeof(type) type = type##Weak; if(!type) return
 
 #define ZHJ_GCD_GLOBAL(block)               dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
 #define ZHJ_GCD_MAIN(block)                 dispatch_async(dispatch_get_main_queue(),block)
@@ -42,13 +42,13 @@
 [View.layer setBorderWidth:(BorderWidth)];\
 [View.layer setBorderColor:[BorderColor CGColor]]
 
-#define ZHJ_VIEW(Rect)          ([[UIView alloc] initWithFrame:Rect])
-#define ZHJ_LABEL(Rect)         ([[UILabel alloc] initWithFrame:Rect])
-#define ZHJ_IMAGEVIEW(Rect)     ([[UIImageView alloc] initWithFrame:Rect])
-#define ZHJ_BUTTON(Rect)        ([[UIButton alloc] initWithFrame:Rect])
-#define ZHJ_TEXTFIELD(Rect)     ([[UITextField alloc] initWithFrame:Rect])
-#define ZHJ_IMAGE(imageName)    ([UIImage imageNamed:[NSString stringWithFormat:@"%@", imageName]])
+#define ZHJ_VIEW(Rect)              ([[UIView alloc] initWithFrame:Rect])
+#define ZHJ_LABEL(Rect)             ([[UILabel alloc] initWithFrame:Rect])
+#define ZHJ_IMAGE_VIEW(Rect)        ([[UIImageView alloc] initWithFrame:Rect])
+#define ZHJ_BUTTON(Rect)            ([[UIButton alloc] initWithFrame:Rect])
+#define ZHJ_TEXT_FIELD(Rect)        ([[UITextField alloc] initWithFrame:Rect])
+#define ZHJ_IMAGE(imageName)        ([UIImage imageNamed:[NSString stringWithFormat:@"%@", imageName]])
 
-#define ZHJ_HEXCOLOR(rgbValue, alphaValue)  ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue])
+#define ZHJ_HEX_COLOR(rgbValue, alphaValue)  ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue])
 
 #endif /* ZHJMarcoFunction_h */

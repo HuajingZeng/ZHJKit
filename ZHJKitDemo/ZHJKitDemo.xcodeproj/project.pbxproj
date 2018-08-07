@@ -38,11 +38,18 @@
 		0A04E7F52019C8020045C7B4 /* ZHJVerticalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7CE2019C8010045C7B4 /* ZHJVerticalLabel.m */; };
 		0A04E7F62019C8020045C7B4 /* ZHJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D02019C8010045C7B4 /* ZHJViewController.m */; };
 		0A04E7F72019C8020045C7B4 /* ZHJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D22019C8010045C7B4 /* ZHJWebViewController.m */; };
-		0A04E7F82019C8020045C7B4 /* ZHJDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D52019C8010045C7B4 /* ZHJDeviceInfo.m */; };
+		0A04E7F82019C8020045C7B4 /* ZHJDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D52019C8010045C7B4 /* ZHJDevice.m */; };
 		0A04E7F92019C8020045C7B4 /* ZHJFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D72019C8010045C7B4 /* ZHJFactory.m */; };
 		0A04E7FA2019C8020045C7B4 /* ZHJLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7D92019C8010045C7B4 /* ZHJLaunchAd.m */; };
 		0A04E7FB2019C8020045C7B4 /* ZHJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7DB2019C8010045C7B4 /* ZHJPhotoBrowser.m */; };
 		0A04E7FC2019C8020045C7B4 /* ZHJPopups.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04E7DD2019C8010045C7B4 /* ZHJPopups.m */; };
+		0A35F9F9211929B400397288 /* NSDate+ZHJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35F9F8211929B400397288 /* NSDate+ZHJKit.m */; };
+		0A35F9FC21192C8000397288 /* ZHJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35F9FA21192C7F00397288 /* ZHJAlertView.m */; };
+		0A35F9FF211934E400397288 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35F9FE211934E400397288 /* CoreLocation.framework */; };
+		0A35FA01211934EE00397288 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35FA00211934EE00397288 /* SystemConfiguration.framework */; };
+		0A35FA03211934FA00397288 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35FA02211934FA00397288 /* CoreTelephony.framework */; };
+		0A35FA052119350200397288 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35FA042119350200397288 /* Security.framework */; };
+		0A35FA082119374C00397288 /* ZHJNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA072119374C00397288 /* ZHJNotificationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,8 +117,8 @@
 		0A04E7D02019C8010045C7B4 /* ZHJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJViewController.m; sourceTree = "<group>"; };
 		0A04E7D12019C8010045C7B4 /* ZHJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJWebViewController.h; sourceTree = "<group>"; };
 		0A04E7D22019C8010045C7B4 /* ZHJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJWebViewController.m; sourceTree = "<group>"; };
-		0A04E7D42019C8010045C7B4 /* ZHJDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJDeviceInfo.h; sourceTree = "<group>"; };
-		0A04E7D52019C8010045C7B4 /* ZHJDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJDeviceInfo.m; sourceTree = "<group>"; };
+		0A04E7D42019C8010045C7B4 /* ZHJDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJDevice.h; sourceTree = "<group>"; };
+		0A04E7D52019C8010045C7B4 /* ZHJDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJDevice.m; sourceTree = "<group>"; };
 		0A04E7D62019C8010045C7B4 /* ZHJFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJFactory.h; sourceTree = "<group>"; };
 		0A04E7D72019C8010045C7B4 /* ZHJFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJFactory.m; sourceTree = "<group>"; };
 		0A04E7D82019C8010045C7B4 /* ZHJLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJLaunchAd.h; sourceTree = "<group>"; };
@@ -121,6 +128,16 @@
 		0A04E7DC2019C8010045C7B4 /* ZHJPopups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJPopups.h; sourceTree = "<group>"; };
 		0A04E7DD2019C8010045C7B4 /* ZHJPopups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJPopups.m; sourceTree = "<group>"; };
 		0A04E7DE2019C8010045C7B4 /* ZHJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJKit.h; sourceTree = "<group>"; };
+		0A35F9F7211929B400397288 /* NSDate+ZHJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZHJKit.h"; sourceTree = "<group>"; };
+		0A35F9F8211929B400397288 /* NSDate+ZHJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZHJKit.m"; sourceTree = "<group>"; };
+		0A35F9FA21192C7F00397288 /* ZHJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJAlertView.m; sourceTree = "<group>"; };
+		0A35F9FB21192C8000397288 /* ZHJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJAlertView.h; sourceTree = "<group>"; };
+		0A35F9FE211934E400397288 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0A35FA00211934EE00397288 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0A35FA02211934FA00397288 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0A35FA042119350200397288 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A35FA062119374C00397288 /* ZHJNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNotificationManager.h; sourceTree = "<group>"; };
+		0A35FA072119374C00397288 /* ZHJNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNotificationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +145,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A35FA052119350200397288 /* Security.framework in Frameworks */,
+				0A35FA03211934FA00397288 /* CoreTelephony.framework in Frameworks */,
+				0A35FA01211934EE00397288 /* SystemConfiguration.framework in Frameworks */,
+				0A35F9FF211934E400397288 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +161,7 @@
 				0A04E7992019C8010045C7B4 /* ZHJKit */,
 				0A04E71E2019BF980045C7B4 /* ZHJKitDemo */,
 				0A04E71D2019BF980045C7B4 /* Products */,
+				0A35F9FD211934E400397288 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +217,8 @@
 				0A04E79E2019C8010045C7B4 /* NSDictionary+ZHJKit.m */,
 				0A04E7A52019C8010045C7B4 /* NSString+ZHJKit.h */,
 				0A04E7A62019C8010045C7B4 /* NSString+ZHJKit.m */,
+				0A35F9F7211929B400397288 /* NSDate+ZHJKit.h */,
+				0A35F9F8211929B400397288 /* NSDate+ZHJKit.m */,
 				0A04E7A92019C8010045C7B4 /* UIColor+ZHJKit.h */,
 				0A04E7AA2019C8010045C7B4 /* UIColor+ZHJKit.m */,
 				0A04E7AB2019C8010045C7B4 /* UIImage+ZHJKit.h */,
@@ -251,6 +275,8 @@
 				0A04E7D02019C8010045C7B4 /* ZHJViewController.m */,
 				0A04E7D12019C8010045C7B4 /* ZHJWebViewController.h */,
 				0A04E7D22019C8010045C7B4 /* ZHJWebViewController.m */,
+				0A35F9FB21192C8000397288 /* ZHJAlertView.h */,
+				0A35F9FA21192C7F00397288 /* ZHJAlertView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -264,12 +290,25 @@
 				0A04E7DD2019C8010045C7B4 /* ZHJPopups.m */,
 				0A04E7D82019C8010045C7B4 /* ZHJLaunchAd.h */,
 				0A04E7D92019C8010045C7B4 /* ZHJLaunchAd.m */,
-				0A04E7D42019C8010045C7B4 /* ZHJDeviceInfo.h */,
-				0A04E7D52019C8010045C7B4 /* ZHJDeviceInfo.m */,
+				0A04E7D42019C8010045C7B4 /* ZHJDevice.h */,
+				0A04E7D52019C8010045C7B4 /* ZHJDevice.m */,
 				0A04E7DA2019C8010045C7B4 /* ZHJPhotoBrowser.h */,
 				0A04E7DB2019C8010045C7B4 /* ZHJPhotoBrowser.m */,
+				0A35FA062119374C00397288 /* ZHJNotificationManager.h */,
+				0A35FA072119374C00397288 /* ZHJNotificationManager.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		0A35F9FD211934E400397288 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A35FA042119350200397288 /* Security.framework */,
+				0A35FA02211934FA00397288 /* CoreTelephony.framework */,
+				0A35FA00211934EE00397288 /* SystemConfiguration.framework */,
+				0A35F9FE211934E400397288 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,8 +388,10 @@
 				0A04E7EC2019C8020045C7B4 /* UIViewController+ZHJKit.m in Sources */,
 				0A04E7F32019C8020045C7B4 /* ZHJNumberPad.m in Sources */,
 				0A04E72F2019BF980045C7B4 /* main.m in Sources */,
+				0A35F9F9211929B400397288 /* NSDate+ZHJKit.m in Sources */,
 				0A04E7FB2019C8020045C7B4 /* ZHJPhotoBrowser.m in Sources */,
 				0A04E7EB2019C8020045C7B4 /* UIView+ZHJKit.m in Sources */,
+				0A35FA082119374C00397288 /* ZHJNotificationManager.m in Sources */,
 				0A04E7F62019C8020045C7B4 /* ZHJViewController.m in Sources */,
 				0A04E7FC2019C8020045C7B4 /* ZHJPopups.m in Sources */,
 				0A04E7E02019C8020045C7B4 /* NSDictionary+ZHJKit.m in Sources */,
@@ -370,7 +411,8 @@
 				0A04E7212019BF980045C7B4 /* AppDelegate.m in Sources */,
 				0A04E7F52019C8020045C7B4 /* ZHJVerticalLabel.m in Sources */,
 				0A04E7EA2019C8020045C7B4 /* UITextView+ZHJKit.m in Sources */,
-				0A04E7F82019C8020045C7B4 /* ZHJDeviceInfo.m in Sources */,
+				0A35F9FC21192C8000397288 /* ZHJAlertView.m in Sources */,
+				0A04E7F82019C8020045C7B4 /* ZHJDevice.m in Sources */,
 				0A04E7E12019C8020045C7B4 /* NSNull+ZHJKit.m in Sources */,
 				0A04E7E62019C8020045C7B4 /* UIColor+ZHJKit.m in Sources */,
 				0A04E7F22019C8020045C7B4 /* ZHJNavigationController.m in Sources */,

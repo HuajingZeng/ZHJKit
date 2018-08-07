@@ -10,7 +10,7 @@
 
 @implementation UIViewController (ZHJKit)
 
-- (void)dismissAnimated:(BOOL)animated completion:(void(^)(void))completion {
+- (void)dismissAllAnimated:(BOOL)animated completion:(void(^)(void))completion {
     UIViewController *rootVC = self.presentingViewController;
     while (rootVC.presentingViewController) {
         rootVC = rootVC.presentingViewController;

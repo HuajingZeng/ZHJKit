@@ -17,5 +17,6 @@
 
 - (void)addIllegalString:(NSString *)string;
 - (void)removeIllegalString:(NSString *)string;
+- (void)setPlaceholder:(NSString *)placeholdStr placeholdColor:(UIColor *)placeholdColor;
 
 @end

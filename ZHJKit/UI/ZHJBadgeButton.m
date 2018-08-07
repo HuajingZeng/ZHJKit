@@ -29,7 +29,7 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame badgeFontSize:(CGFloat)badgeFontSize badgePadding:(CGFloat)badgePadding badgeBorderWidth:(CGFloat)badgeBorderWidth badgeTextColor:(UIColor *)badgeTextColor badgeBackgroundColor:(UIColor *)badgeBackgroundColor {
-    return [self initWithFrame:frame badgeFontSize:badgeFontSize badgePadding:badgePadding badgeBorderWidth:badgeBorderWidth badgeTextColor:badgeTextColor badgeBackgroundColor:badgeBackgroundColor imageDirection:ZHJButtonImageDirectionLeft space:0 titleSize:CGSizeZero iamgeSize:CGSizeZero];
+    return [self initWithFrame:frame badgeFontSize:badgeFontSize badgePadding:badgePadding badgeBorderWidth:badgeBorderWidth badgeTextColor:badgeTextColor badgeBackgroundColor:badgeBackgroundColor imageDirection:ZHJButtonImageDirectionDefault space:0 titleSize:CGSizeZero iamgeSize:CGSizeZero];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame imageDirection:(ZHJButtonImageDirection)direction space:(CGFloat)space titleSize:(CGSize)titleSize iamgeSize:(CGSize)imageSize {

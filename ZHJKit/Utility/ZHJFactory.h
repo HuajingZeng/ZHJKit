@@ -27,13 +27,6 @@ typedef NS_ENUM(NSInteger, DateAccuracy) {
 //SHA1
 + (NSString *)sha1:(NSString *)input;
 
-//formatDate
-+ (NSString *)formatDate:(NSDate *)date withString:(NSString *)string;
-
-+ (NSString *)formatDateFrom:(NSDate *)startDate to:(NSDate *)endDate accuracy:(DateAccuracy)dateAccuracy;
-
-+ (NSDate *)dateFormDateString:(NSString *)dateString formatString:(NSString *)formatString;
-
 #pragma mark - UIKit
 //UIView
 + (UIView *)viewFrame:(CGRect)frame bgColor:(UIColor *)bgColor;

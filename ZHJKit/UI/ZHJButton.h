@@ -11,7 +11,8 @@
 // Button image orientation
 typedef NS_ENUM(NSInteger, ZHJButtonImageDirection)
 {
-    ZHJButtonImageDirectionLeft,// Default
+    ZHJButtonImageDirectionDefault,
+    ZHJButtonImageDirectionLeft,
     ZHJButtonImageDirectionRight,
     ZHJButtonImageDirectionTop,
     ZHJButtonImageDirectionBottom,

@@ -134,7 +134,7 @@
         [attributes setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
     }
     
-    CGSize textSize = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, font.pointSize) options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attributes context:nil].size;
+    CGSize textSize = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, font.pointSize) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attributes context:nil].size;
     
     return textSize.width;
 }

@@ -69,7 +69,7 @@ static const char *_valueChangeBlock = "_valueChangeBlock";
 }
 
 - (void)config {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(valueChanged) name:UITextViewTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(valueChanged) name:UITextViewTextDidChangeNotification object:self];
     NSArray *illegalStrings = @[@"\"", @"\'"];
     [self setIllegalStrings:illegalStrings];
 }
@@ -220,5 +220,25 @@ static const char *_valueChangeBlock = "_valueChangeBlock";
         self.valueChangeBlock(self);
     }
 }
+
+- (void)setPlaceholder:(NSString *)placeholdStr placeholdColor:(UIColor *)placeholdColor {
+    UILabel *placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
+    placeHolderLabel.text = placeholdStr;
+    placeHolderLabel.numberOfLines = 0;
+    placeHolderLabel.textColor = placeholdColor;
+    placeHolderLabel.font = self.font;
+    [placeHolderLabel sizeToFit];
+    [self addSubview:placeHolderLabel];
+    self.contentInset = UIEdgeInsetsMake(0, -4, 0, 4);
+    [self setValue:placeHolderLabel forKey:@"_placeholderLabel"];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    UIView *placeholderLabel = [self valueForKey:@"_placeholderLabel"];
+    UIEdgeInsets textContainerInset = self.textContainerInset;
+    placeholderLabel.frame = CGRectMake(0+textContainerInset.left+4, 0+textContainerInset.top, placeholderLabel.bounds.size.width, placeholderLabel.bounds.size.height);
+}
+
 
 @end
